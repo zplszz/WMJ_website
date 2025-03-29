@@ -8,18 +8,11 @@ nav:
 # {% include icon.html icon="fa-solid fa-microscope" %}我们的成果
 
 ## 历史成绩
-狼牙战队是一个以参加RoboMaster机器人比赛为主，其余竞赛为辅，以培养队员全面综合水平目标的综合型团队。
+WMJ战队是一个以参加RoboMaster机器人比赛为主，其余竞赛为辅，以培养队员全面综合水平目标的综合型团队。
 
-* 15年分区赛亚军、季军和第五名，在全国赛均进入全国三十二强；
-* 16年分区赛第五名，全国赛十六强；
-* 17年分区赛亚军，全国赛十六强；
-* 18年分区赛季军，全国赛三十二强；
-* 19年分区赛八强，全国赛三十二强；
-* 20年国家级二等奖；
-* 21年分区赛十六强；
-* 22年分区赛八强，全国赛线上评选，国家级一等奖；
-* 23年分区赛十六强，全国赛四十六强，国家级二等奖；
-* 24年分区赛殿军，全国赛二十八强，国家级二等奖。
+
+* 24年联盟赛冠军，分区赛16强
+* 25年联盟赛亚军
 
 {% include section.html %}
 <!-- echarts -->
@@ -40,7 +33,7 @@ option = {
             
         },
         formatter: function (params) {
-            var info = ["国家级二等奖", "分区赛十六强","分区赛八强，全国赛线上评选，国家级一等奖","分区赛十六强，全国赛四十六强，国家级二等奖","分区赛殿军，全国赛二十八强，国家级二等奖"];
+            var info = ["国家级二等奖", "分区赛十六强","分区赛八强，全国赛线上评选，国家级一等奖","分区赛十六强，全国赛四十六强，国家级二等奖","联盟赛冠军，分区赛16强"];
             var dataIndex = params[0].dataIndex; // 获取数据点的索引
             return params[0].axisValue + info[dataIndex]+'<br> 排名：' + params[0].value; // 自定义提示框内容，这里显示额外信息
         }
@@ -66,7 +59,7 @@ option = {
   },
   series: [
     {
-      data: [23,33,26,38,25],
+      data: [16,11,17,45,60],
       type: 'line'
     }
   ]
@@ -82,14 +75,14 @@ option && myChart.setOption(option);
 <div class="card-text">
 <div class="card-title">RoboMaster 2024</div>
 
-小组生死赛，两发飞镖，大符加成，推爆基地。
+RM赛事第一发随机靶命中
 </div>
 <div class="card-image">
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954808056&bvid=BV1dy411h7D7&cid=1556478508&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" mute="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1904739509&bid=BV1YU411o7b5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" mute="true"></iframe>
 </div>
 </div>
 
-<div class="card">
+<!-- <div class="card">
 <div class="card-text">
 <div class="card-title">RoboMaster 2024</div>
 
@@ -98,7 +91,7 @@ option && myChart.setOption(option);
 <div class="card-image">
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1405028929&bvid=BV1sr421L7yP&cid=1557709783&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" mute="true"></iframe>
 </div>
-</div>
+</div> -->
 
 
 {% include section.html %}
@@ -126,7 +119,7 @@ option && myChart.setOption(option);
 
 {% assign awards_count =  national_awards_count | plus: international_awards_count | plus: provincial_awards_count | plus: other_awards_count %}
 
-根据不完全统计，狼牙战队已经获得了总计 {{awards_count}} 项奖项。
+根据不完全统计，WMJ战队已经获得了总计 {{awards_count}} 项奖项。
 <table>
 <tr>
   <td>国家级奖项</td>
@@ -165,7 +158,7 @@ option && myChart.setOption(option);
 {% include search-box.html %}
 {% include search-info.html %}
 
-根据不完全统计，狼牙战队已经获得了总计 {{site.projects | size}} 项大创项目。
+根据不完全统计，WMJ战队已经获得了总计 {{site.projects | size}} 项大创项目。
 
 {% include list.html data="projects" component="projects" style="simple" %}
 
@@ -176,7 +169,7 @@ option && myChart.setOption(option);
 {% include search-box.html %}
 {% include search-info.html %}
 
-根据不完全统计，狼牙战队已经获得了总计 {{site.patents | size}} 项专利。
+根据不完全统计，WMJ战队已经获得了总计 {{site.patents | size}} 项专利。
 
 {% include list.html data="patents" component="patents" style="simple" %}
 

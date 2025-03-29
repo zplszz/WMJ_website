@@ -1,16 +1,16 @@
 ---
 ---
 
-# 华中科技大学 狼牙战队 
+# 西北工业大学 WMJ战队
 
-华中科技大学RoboMaster团队（狼牙战队）是华中科技大学启明学院创新团队之一，是一个以参加RoboMaster机器人比赛为主，其余竞赛为辅，以培养队员全面综合水平为目标的综合型团队。
+西北工业大学RoboMaster基地（WMJ战队）是西北工业大学校级创新实践基地之一，是一个以参加RoboMaster机器人比赛为主，其余竞赛为辅，以培养队员全面综合水平为目标的综合型团队。
 
 {%
   include button.html
   type="docs"
   text="Bilibili"
   icon="fa-brands fa-bilibili"
-  link="https://space.bilibili.com/475402455"
+  link="https://space.bilibili.com/454165986"
 %}
 {%
   include button.html
@@ -120,7 +120,7 @@
 
 {% capture text %}
 
-我们活跃于各种社会活动，积极展现狼牙风采。
+我们活跃于各种社会活动，积极展现WMJ风采。
 
 {%
   include button.html
